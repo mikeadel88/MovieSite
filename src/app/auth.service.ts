@@ -25,10 +25,10 @@ export class AuthService {
 
   }
   register(data:any):Observable<any>{
-     return this._httpclient.post("https://route-egypt-api.herokuapp.com/signup", data);
+     return this._httpclient.post("https://route-movies-api.vercel.app/signup", data);
   }
   login(data:any):Observable<any>{
-    return this._httpclient.post("https://route-egypt-api.herokuapp.com/signin", data);
+    return this._httpclient.post("https://route-movies-api.vercel.app/signin", data);
  }
   
 }
